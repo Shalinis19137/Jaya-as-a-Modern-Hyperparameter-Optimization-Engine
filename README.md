@@ -1,17 +1,19 @@
 # Jaya-as-a-Modern-Hyperparameter-Optimization-Engine
 
+
+
+
 GSoC 2026 – R Project for Statistical Computing (rstats)
 
 This repository contains my prototype implementation for the GSoC 2026 idea:
 
 “Jaya for Modern Hyperparameter Optimization”
 
+
+
+
 The goal of this work is to extend the Jaya algorithm into a mixed-type hyperparameter optimization engine suitable for modern ML workflows.
 
-Contributor Details
-
-Contributor Name: Shalini
-GitHub Profile: https://github.com/Shalinis19137
 
 
 Target Organization: R Project for Statistical Computing (rstats)
@@ -22,7 +24,7 @@ Test Results :
 
 The prototype was validated across three progressively complex levels:
 
-1️ Easy Level – Integer Hyperparameter Optimization
+1️.  Easy Level – Integer Hyperparameter Optimization
 
 Task: Optimize max_depth of Decision Tree (Iris dataset)
 Metric: 5-Fold Cross-Validation Accuracy
@@ -37,7 +39,7 @@ Stable across multiple runs
 
 Lower variance compared to Random Search baseline
 
-2️ Medium Level – Mixed-Type Optimization
+2️.  Medium Level – Mixed-Type Optimization
 
 Model: Random Forest
 Hyperparameters Tuned:
@@ -58,7 +60,7 @@ Stable convergence behavior
 
 No runtime errors during mixed-type search
 
-3️ Hard Level – Generic Jaya Tuning Engine
+3️.  Hard Level – Generic Jaya Tuning Engine
 
 Implemented:
 
@@ -90,10 +92,10 @@ Jaya demonstrates structured optimization behavior and early convergence on low-
 
 Current Status
 
-✔ Integer-safe optimization implemented
-✔ Mixed-type encoding layer implemented
-✔ Generic optimizer engine developed
-✔ Functional and OOP designs completed
-✔ Initial benchmarking completed
+ 1. Integer-safe optimization implemented
+2.  Mixed-type encoding layer implemented
+3.  Generic optimizer engine developed
+4.  Functional and OOP designs completed
+5.  Initial benchmarking completed
 
 This repository represents an initial working prototype toward building a production-ready Jaya-based HPO engine for integration into the R ecosystem
