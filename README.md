@@ -3,6 +3,9 @@
 
 
 
+
+
+
 GSoC 2026 – R Project for Statistical Computing (rstats)
 
 This repository contains my prototype implementation for the GSoC 2026 idea:
@@ -16,18 +19,57 @@ The goal of this work is to extend the Jaya algorithm into a mixed-type hyperpar
 
 
 
+
+
+
+
+
+
+
+
+
 Target Organization: R Project for Statistical Computing (rstats)
 GSoC Idea: Jaya for Modern Hyperparameter Optimization
 Proposed Mentor: Neeraj Bokde
+
+
+
+
+
+
+
+
+
+
+
 
 Test Results : 
 
 The prototype was validated across three progressively complex levels:
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1️.  Easy Level – Integer Hyperparameter Optimization
 
 Task: Optimize max_depth of Decision Tree (Iris dataset)
 Metric: 5-Fold Cross-Validation Accuracy
+
+
+
+
 
 Observed Results:
 
@@ -38,6 +80,16 @@ Convergence achieved within first few iterations
 Stable across multiple runs
 
 Lower variance compared to Random Search baseline
+
+
+
+
+
+
+
+
+
+
 
 2️.  Medium Level – Mixed-Type Optimization
 
@@ -59,6 +111,25 @@ Correct categorical embedding using argmax encoding
 Stable convergence behavior
 
 No runtime errors during mixed-type search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 3️.  Hard Level – Generic Jaya Tuning Engine
 
@@ -82,13 +153,18 @@ Deterministic improvement toward best individual
 
 Successfully handled normalized continuous search space
 
-Comparison Summary
-Method	Convergence	Stability	Mixed-Type Support	Reusability
-Random Search	Unstable	High variance	Manual	Low
-Functional Jaya	Stable	Low variance	Via decoding	Moderate
-OOP Jaya	Stable	Low variance	Via decoding	High
 
-Jaya demonstrates structured optimization behavior and early convergence on low-complexity datasets while remaining extensible for larger search spaces.
+
+
+
+
+
+
+
+
+
+
+
 
 Current Status
 
